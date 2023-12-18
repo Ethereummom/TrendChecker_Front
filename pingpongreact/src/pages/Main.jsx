@@ -26,8 +26,15 @@ import { getTodaysTime,parseTimeDataToYYMMDD } from '../global/TimeParser';
                     'Authorization' : `Bearer ${jwtToken}`
                 }
             }).then((response) => {
+                if(response.data.data == null){
+                    setStgyInfos([]);
+
+                }
+                else
+                {
                 setStgyInfos(response.data.data);
                 console.log(response.data.data);
+                }
             })
             .catch(error => console.log("error occured"));
         }
