@@ -22,6 +22,7 @@ function Header(){
 
 
     return (
+        <div>
         <div id="subHeader" class="container">
             <div class="container_inner">
                 <div>
@@ -61,8 +62,10 @@ function Header(){
                     </ul>
                 </div>
             </div>
-            <TradingViewWidgetTicker/>
+           
         </div>
+         <TradingViewWidgetTicker/>
+         </div>
     )
 }
 

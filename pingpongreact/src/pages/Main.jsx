@@ -7,6 +7,8 @@ import Cookies from "js-cookie";
 import {jwtDecode} from "jwt-decode";
 import Profile from '../components/common/profile';
 import { getTodaysTime,parseTimeDataToYYMMDD } from '../global/TimeParser';
+import TradingViewNewsWidget from '../components/tradingview/TradingViewNewsWidget';
+import TradingViewWidgetWhole from '../components/tradingview/TradingViewWidgetWhole';
 
     function Main({header, footer}){
 
@@ -47,7 +49,7 @@ import { getTodaysTime,parseTimeDataToYYMMDD } from '../global/TimeParser';
         <>  
             {header}
             <div>
-                <div class="earmark-app">
+                <div class="trendchecker-app">
                     <main class="main">
                     <nav class="nav">
                         <ul class="tabs">
@@ -86,6 +88,16 @@ import { getTodaysTime,parseTimeDataToYYMMDD } from '../global/TimeParser';
                                     <span class="tab-btn-title">Accounts</span>
                                 </button>
                             </li>
+                            <div className='wdgtSizing'>
+                            <li class = "tab">
+                                <TradingViewWidgetWhole/>
+                            </li>
+                            </div>
+                            <div className='wdgtSizing'>
+                            <li class="tab">
+                                <TradingViewNewsWidget/>
+                            </li>
+                            </div>
                         </ul>
                     </nav>
                     <div class="content">
@@ -98,7 +110,7 @@ import { getTodaysTime,parseTimeDataToYYMMDD } from '../global/TimeParser';
                                 <div class="overview-body">
                                     <div class="summary">
                                         <h3 class="summary-date">{getTodaysTime()}</h3>
-                                        <span class="summary-amount">+$87.01</span>
+                                        <span class="summary-amount">X10</span>
                                     </div>
                                     {topFiveStrategyInfos.map((strategyData, index) => (
                                     <div class="list">
@@ -132,8 +144,8 @@ import { getTodaysTime,parseTimeDataToYYMMDD } from '../global/TimeParser';
                             </section>
                             <section class="overview">
                                 <header class="overview-header">
-                                    <h2 class="overview-header-title">Upcoming payments<span>3</span></h2>
-                                    <a href="#" class="link">View all</a>
+                                    <h2 class="overview-header-title">Top Analysis<span>5</span></h2>
+                                    <a href="#" class="link">View all Technical Analysis</a>
                                 </header>
                                 <div class="overview-body">
                                     <div class="list">

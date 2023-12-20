@@ -55,7 +55,7 @@ img {
   min-height : 500px;
 }
 
-.earmark-app {
+.trendchecker-app {
 	box-shadow: 0 0 2px 0 rgba(#000, .1), 0 15px 30px rgba(#444, .1);
 	padding: 3rem;
 	border-radius: 15px;
@@ -65,7 +65,7 @@ img {
 	min-height: calc(100vh - 4rem);
 }
 
-.header-earmark {
+.header-trendchecker {
 	display: flex;
 	align-items: center;
 }
@@ -144,8 +144,8 @@ img {
 }
 
 .tab-btn {
-	border: 2px solid #3498db; /* 테두리 두께와 색상 설정 */
-  border-radius: 10px;
+	border: 1px solid #dedede;
+  border-radius: 8px;
 	background-color: transparent;
 	padding: .75rem;
 	border-radius: 6px;
@@ -477,71 +477,6 @@ body::-webkit-scrollbar-track {
 #sign_content .sign_form img{ width:100px; height: 100px; border-radius:50%; }
 #sign_content .sign_form input{ margin-bottom:10px;}
 
-#planner_content{ padding:50px 0; margin-bottom:100px; }
-#planner_content > div > div > ul{ display:flex; flex-wrap:wrap; }
-.planner_profile{ width:25%; position: relative; }
-.planner_profile > a > div{ display:flex; padding:10px; width:100%; justify-content:space-evenly; flex-wrap:wrap; }
-.planner_profile > div{ display:flex; padding:10px; }
-.planner_profile > a > div:first-child{ box-shadow: 0 2px 5px rgba(0,0,0,0.3); background:#ededed; border-radius:10px; }
-.planner_profile  div.hot_chart{ top:430px; display:flex; flex-direction:column; grid-gap:20px; width:350px; }
-.planner_profile  div.pointArea{ top:390px; display:flex; flex-direction:column; grid-gap:20px; width:300px; }
-.planner_profile .hot_chart ul{ display:flex; border-radius:10px; border:solid 2px #dadada; flex-direction:column;  overflow:hidden; }
-.planner_profile .hot_chart li{ display:flex; width:100%; justify-content:space-between; padding:10px; border-bottom:solid 1px #dadada; }
-.planner_profile .hot_chart li:last-child{ border-bottom:none; }
-.planner_profile .pl_pro_img{ width:50%; display:flex; justify-content: center; align-items: center; }
-.planner_profile .pl_pro_text{ width:50%; }
-.planner_profile .pl_pro_img img{ width:90%; height:148.5px; object-fit:cover; border-radius:50%; }
-.planner_profile .pl_pro_img p{ text-align: center; padding-top:10px; }
-.planner_profile .pl_pro_text > p{ padding:13px 10px; }
-#board > div > div > ul{ display:flex; justify-content: space-between; }
-.board_area{ width:75%; padding:0 40px; }
-.boardlist_area{ width:75%; padding:0 40px; }
-.board_list{ padding-top:20px; }
-.board_list .toListBtn{ padding:10px 20px; margin-bottom:10px; background: #4c6ef5; border: none; color: #fff; border-radius: 5px; }
-.board_list .boardReadImg{ width:100%; }
-.board_list .thumbnail{ width:100px; }
-.board_list .thumb{ width: 100%; display: flex; grid-gap: 20px; flex-wrap:wrap; }
-.board_list .thumb_area{  display: flex; grid-gap: 20px; }
-.signUpBtn{ padding:15px; margin-bottom:10px; background: #fff; border: none; color: #333; border-radius: 5px; width:250px; font-size:20px; }
-.myPageBtn{ padding:5px 20px; background: #4c6ef5; border: none; color: #fff; border-radius: 5px; margin-top: 20px; margin-left:15px; }
-.board_list ul{ display:flex; flex-direction: column; border:solid 2px #d5d5d5; }
-.board_list ul > li{ display:flex; flex-wrap:wrap; justify-content:space-between; grid-gap:10px; padding:15px 10px; border-bottom:solid 1px #d5d5d5; cursor:pointer; }
-.board_list ul > li:last-child{ border:none; }
-.board_list ul > li > p{ width:100%; }
-.board_list > ul > li > textarea{ width:100%; padding: 10px; font-size: 18px; line-height: 30px; }
-/*게시물 상세보기 페이지*/
-.boardlist_area > div > ul > li{ cursor:default; }
-.boardlist_area .board_list .list_title{ display:flex; width:100%; align-items:center; }
-.boardlist_area .board_list > ul > li > p{ padding:10px; font-size:18px; line-height:35px; }
-.boardlist_area .list_title .title_pro{ width:11%; display: flex; flex-direction: column; align-items: center; }
-.boardlist_area .write_cate { width:100%; }
-.boardlist_area .write_cate > select{ width:100%; height:50px; font-size:20px; }
-.boardlist_area .title_pro img{ width:55px; }
-.boardlist_area .title_pro * { float:left; }
-.boardlist_area .title_pro p{ padding-top:10px; }
-.boardlist_area .list_title h1{ width:80%; padding-left:40px; }
-.boardlist_area .list_title input{ width:80%; font-size:30px; padding-left:15px; }
-.boardlist_area .list_title .readLike{ width:9%; display:flex; justify-content: center;  }
-.boardlist_area .list_title .readLike img{ cursor:pointer; }
-/*게시물 상세보기 페이지 (댓글) */
-.boardlist_area .list_comment{ grid-gap:0; }
-.boardlist_area .list_comment > *{ padding:5px 10px; }
-.boardlist_area .list_comment img{ width:7%; height:7%; padding:0; }
-.boardlist_area .list_comment .comment_content{ width:77%; display:flex; flex-direction: column; justify-content: space-between; }
-.boardlist_area .comment_content > p:first-child{ font-size:14px; }
-.boardlist_area .list_comment .comment_info{ width:16%; display:flex; flex-direction: column; justify-content: space-between; align-items:flex-end; }
-/* 댓글 작성란 */
-.boardlist_area .comment_write{ grid-gap:0; }
-.boardlist_area .comment_write > *{ padding:5px 10px; }
-.boardlist_area .comment_write img{ width:7%; height:7%; padding:0; }
-.boardlist_area .comment_write .comment_content{ width:80%; display:flex; flex-direction: column; justify-content: space-between; }
-.boardlist_area .comment_write .comment_content textarea{ height:50px; resize: none; padding:10px; }
-.boardlist_area .comment_content > form > p:first-child{ font-size:14px; }
-.boardlist_area .comment_write .comment_btn{ width:13%; display:flex; flex-direction: column; justify-content: space-between; align-items:flex-end; }
-.boardlist_area .comment_write button{ width:100%; height:100%; background:#4c6ef5; border:none; color:#fff; border-radius:5px;  }
-
-.board_area img, .board_list img{ width:16px; vertical-align:middle; }
-
 .search_area form{ display:flex; flex-wrap:wrap; grid-gap:15px; justify-content: space-between; }
 .search_area select{ width:100%; height:50px; font-size:20px; }
 .search_area input{ width:69%; padding-left:10px; border-radius:5px; border:solid 2px #d5d5d5; font-size:16px; }
@@ -559,27 +494,6 @@ body::-webkit-scrollbar-track {
 .planner_challenge .challenge_list .p_cl_title{ width:20%; text-align:left; font-size:20px; }
 .planner_challenge .challenge_list .p_cl_progress{ width:60%; }
 .planner_challenge .challenge_list .p_cl_date{ width:20%; }
-
-/* planner progressbar */
-.challenge_list .progress_area{ display:flex; }
-.challenge_list .progress_area > div{ width:100%; }
-.challenge_list .my-progress-bar{
-  height:40px;
-  background:#f0f0f0;
-  border-radius:20px;
-  color:#fff;
-  font-size:20px;
-
-}
-.challenge_list .my-progress-bar .progress-bar{
-  display: flex; align-items: center; justify-content: center;
-  background:#007bff;
-  padding-left:10px;
-  border-radius:20px;
-  height:40px;
-}
-/* planner progressbar */
-
 .planner_space{ width:25%; }
 .planner_calendar{ width:35%; height:250px; padding:0 40px; }
 .planner_calendar #datepickerDiv{ margin-top:50px; padding-bottom:20px; }
@@ -1865,11 +1779,12 @@ body {
 }
 
 .real-profile{
-  height : 392px;
+  height : 100%;
+  width : 100%;
   text-align : left;
   float : left;
-  border: 2px solid #3498db; /* 테두리 두께와 색상 설정 */
-  border-radius: 10px; /* 테두리의 모서리를 둥글게 만듭니다. */
+  border: 1px solid #dedede;
+  border-radius: 8px;
   padding: 10px; /* 내부 여백 설정 */
   margin : 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
@@ -2300,3 +2215,14 @@ textarea {
   width: 100%;
   min-height: 15em;
 }
+
+.wdgtSizing{
+  margin : 20px 0px 20px 0px;
+}
+
+#wdgtTvWhole{
+  width : 480px;
+  height : 900px;
+  margin : 20px 0px 20px 0px;
+}
+
